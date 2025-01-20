@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Table Example</h1>
+
+    <!-- Basic Table Example -->
+    <h2>Basic Table</h2>
+    <table>
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Name</th> <!-- Column header for Name -->
+                <th>Age</th> <!-- Column header for Age -->
+                <th>City</th> <!-- Column header for City -->
+            </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>John Doe</td> <!-- Name data -->
+                <td>28</td> <!-- Age data -->
+                <td>New York</td> <!-- City data -->
+            </tr>
+            <tr>
+                <td>Jane Smith</td> <!-- Name data -->
+                <td>34</td> <!-- Age data -->
+                <td>Los Angeles</td> <!-- City data -->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table with Row and Column Span -->
+    <h2>Table with Rowspan and Colspan</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td> <!-- Rowspan: Spans two rows -->
+            <td>9 AM</td>
+            <td>Team Meeting</td>
+        </tr>
+        <tr>
+            <td>11 AM</td>
+            <td>Project Work</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2">All-day Workshop</td> <!-- Colspan: Spans two columns -->
+        </tr>
+    </table>
+</body>
+
+</html>
+
+
+<!-- <table>: Defines the table.
+    <thead>: Contains the table header.
+    <tbody>: Contains the main content (table rows and columns).
+    <tr>: Defines a table row.
+    <th>: Defines a header cell (bold and centered by default).
+    <td>: Defines a data cell. 
+    rowspan: Makes a cell span across multiple rows.
+    colspan: Makes a cell span across multiple columns.-->

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links, Forms, and Inputs</title>
+    <style>
+        /* Styling for links section */
+        .links-section {
+            margin: 20px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for form section */
+        form {
+            margin: 20px 0;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links, Forms, and Inputs Example</h1>
+
+    <!-- Links Section -->
+    <div class="links-section">
+        <h2>Links</h2>
+        <!-- A simple hyperlink -->
+        <a href="https://www.google.com" target="_blank" title="opening google in new tab">Visit Google</a>
+        <!-- Anchor link within the same page -->
+        <a href="#form-section">Jump to Form Section</a>
+    </div>
+
+    <!-- Form Section -->
+    <div id="form-section">
+        <h2>Form Example</h2>
+        <form action="submit-form.php" method="POST">
+            <!-- Text Input -->
+            <label for="text">Text Input:</label>
+            <input type="text" id="text" name="text" placeholder="Enter some text">
+
+            <!-- Password Input -->
+            <label for="password">Password Input:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <!-- Email Input -->
+            <label for="email">Email Input:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <!-- Number Input -->
+            <label for="number">Number Input:</label>
+            <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100">
+
+            <!-- Date Input -->
+            <label for="date">Date Input:</label>
+            <input type="date" id="date" name="date">
+
+            <!-- Time Input -->
+            <label for="time">Time Input:</label>
+            <input type="time" id="time" name="time">
+
+            <!-- Color Picker -->
+            <label for="color">Color Picker:</label>
+            <input type="color" id="color" name="color">
+
+            <!-- File Input -->
+            <label for="file">File Input:</label>
+            <input type="file" id="file" name="file">
+
+            <!-- URL Input -->
+            <label for="url">URL Input:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com">
+
+            <!-- Telephone Input -->
+            <label for="tel">Telephone Input:</label>
+            <input type="tel" id="tel" name="tel" placeholder="123-456-7890">
+
+            <!-- Range Slider -->
+            <label for="range">Range Slider:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+
+            <!-- Checkbox -->
+            <label>Checkbox Input:</label>
+            <input type="checkbox" id="check1" name="check1" value="Option1">
+            <label for="check1">Option 1</label>
+            <input type="checkbox" id="check2" name="check2" value="Option2">
+            <label for="check2">Option 2</label>
+
+            <!-- Radio Buttons -->
+            <label>Radio Input:</label>
+            <input type="radio" id="radio1" name="radioGroup" value="Option1">
+            <label for="radio1">Option 1</label>
+            <input type="radio" id="radio2" name="radioGroup" value="Option2">
+            <label for="radio2">Option 2</label>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
